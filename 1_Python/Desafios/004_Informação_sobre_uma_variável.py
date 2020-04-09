@@ -1,0 +1,8 @@
+n = input('Carrega em teclas:')
+print(type(n))
+print('Escreveste só letras?', n.isalpha())
+print('Escreveste só letras maísculas?', n.isupper())
+print('Escreveste só letras minúsculas?', n.islower())
+print('Escreveste um número inteiro?', n.isnumeric())
+print('Escreveste letras e/ou números?', n.isalnum())
+print('Escreveste um espaço?', n.isspace())
