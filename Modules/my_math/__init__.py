@@ -73,7 +73,7 @@ def double(num):
 
 
 def factorial(num):
-    if num == 1:
+    if num == 1 or num == 0:
         return 1
     else:
         return num * factorial(num - 1)
@@ -109,25 +109,16 @@ def increase(num=0, pcent=0):
 
 
 def lcm(*num):
-    len_num = len(num)
     num = list(num)
     if str(type(num[0])) == "<class 'list'>":
         num = num[0]
-        len_num = len(num)
+    len_num = len(num)
     if len_num < 2:
         return None
     elif len_num == 2:
         a = num[0]
         b = num[1]
-        if a == b:
-            return a
-        elif a > b:
-            big = a
-            small = b
-        else:
-            big = b
-            small = a
-        return int(big / gcd(big, small) * small)
+        return int(a * b / gcd(a, b))
     else:
         num[0] = lcm(num[0], num[-1])
         num.pop(-1)
@@ -218,4 +209,3 @@ def primefact(n):   # Para números com até 16-17 digitos
 
 def triple(num):
     return num * 3
-
