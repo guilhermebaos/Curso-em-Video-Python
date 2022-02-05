@@ -123,3 +123,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/Curso-em-Video-Python.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
